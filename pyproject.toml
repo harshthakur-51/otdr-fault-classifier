@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "otdr-fault-classifier"
+version = "0.1.0"
+description = "Lightweight OTDR fiber fault classification demonstration"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+otdr-classify = "otdr_fault_classifier.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
